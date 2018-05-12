@@ -2,73 +2,83 @@ package eu.kingconquest.kingmap.Cores;
 
 import eu.kingconquest.kingmap.Graphics.Renderer;
 
-public class Engine implements Runnable{
+import java.awt.event.KeyEvent;
 
+public class Engine implements Runnable {
+
+    private final double UPDATE_CAP = 1.0 / 60.0;
     private Thread mainThread;
     private Window window;
     private Renderer renderer;
-
+    private Input input;
     private boolean running = false;
-    private final double UPDATE_CAP = 1.0/60.0;
-
     private int WIDTH = 320, HEIGHT = 240; //Pixel size
     private float SCALE = 1f; //Canvas Size * Scale
     private String TITLE = "Test Title";
     private String VERSION = "V.0.1 - Engine";
 
+    public Engine() {
+
+    }
+
     public int getWIDTH() {
         return WIDTH;
-    }
-    public int getHEIGHT() {
-        return HEIGHT;
-    }
-    public String getTITLE() {
-        return TITLE;
-    }
-    public float getSCALE() {
-        return SCALE;
-    }
-    public String getVERSION() {
-        return VERSION;
-    }
-    public Window getWindow() {
-        return window;
     }
 
     public void setWIDTH(int WIDTH) {
         this.WIDTH = WIDTH;
     }
+
+    public int getHEIGHT() {
+        return HEIGHT;
+    }
+
     public void setHEIGHT(int HEIGHT) {
         this.HEIGHT = HEIGHT;
     }
+
+    public String getTITLE() {
+        return TITLE;
+    }
+
     public void setTITLE(String TITLE) {
         this.TITLE = TITLE;
     }
+
+    public float getSCALE() {
+        return SCALE;
+    }
+
     public void setSCALE(float SCALE) {
         this.SCALE = SCALE;
     }
+
+    public String getVERSION() {
+        return VERSION;
+    }
+
     public void setVERSION(String VERSION) {
         this.VERSION = VERSION;
     }
 
-
-    public Engine(){
-
+    public Window getWindow() {
+        return window;
     }
 
-    public void start(){
+    public void start() {
         window = new Window(this);
         renderer = new Renderer(this);
+        input = new Input(this);
 
         mainThread = new Thread(this);
         mainThread.run();
     }
 
-    public void stop(){
+    public void stop() {
 
     }
 
-    public void run(){
+    public void run() {
         running = true;
 
         boolean render = false;
@@ -98,8 +108,13 @@ public class Engine implements Runnable{
                 unprocessedTime -= UPDATE_CAP;
                 render = true;
 
-                 //TODO: Update Game
-                if (frameTime >= 1.0){
+                //TODO: Update Game
+                if (input.isKey(KeyEvent.VK_A)) {
+                    System.out.println("A is Pressed;");
+                }
+                input.update();
+
+                if (frameTime >= 1.0) {
                     frameTime = 0;
                     fps = frames;
                     frames = 0;
@@ -112,7 +127,7 @@ public class Engine implements Runnable{
                 //TODO: Render Game
                 window.update();
                 frames++;
-            }else{
+            } else {
                 try {
                     Thread.sleep(1);
                 } catch (InterruptedException e) {
@@ -123,7 +138,7 @@ public class Engine implements Runnable{
         }
     }
 
-    private void dispose(){
+    private void dispose() {
         //TODO: Dispose code
     }
 }

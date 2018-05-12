@@ -12,21 +12,14 @@ public class Window extends JFrame {
     private Graphics g;
 
 
-    public BufferedImage getImage() {
-        return image;
-    }
-    public Canvas getCanvas() {
-        return canvas;
-    }
-
-    public Window(Engine e){
+    public Window(Engine e) {
         createWindow(e);
     }
 
-    private void createWindow(Engine e){
+    private void createWindow(Engine e) {
         image = new BufferedImage(e.getWIDTH(), e.getHEIGHT(), BufferedImage.TYPE_INT_RGB);
         canvas = new Canvas();
-        Dimension s = new Dimension((int)(e.getWIDTH() * e.getSCALE()), (int)(e.getHEIGHT() * e.getSCALE()));
+        Dimension s = new Dimension((int) (e.getWIDTH() * e.getSCALE()), (int) (e.getHEIGHT() * e.getSCALE()));
         canvas.setPreferredSize(s);
         canvas.setMaximumSize(s);
         canvas.setMinimumSize(s);
@@ -45,8 +38,18 @@ public class Window extends JFrame {
         g = bs.getDrawGraphics();
     }
 
-    public void update(){
+    public void update() {
         g.drawImage(image, 0, 0, canvas.getWidth(), canvas.getHeight(), null);
         bs.show();
     }
+
+    public BufferedImage getImage() {
+        return image;
+
+    }
+
+    public Canvas getCanvas() {
+        return canvas;
+    }
+
 }

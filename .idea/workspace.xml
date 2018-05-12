@@ -25,15 +25,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Window.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="248">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
                 <element signature="method#createWindow#0;class#Window#0" />
                 <element signature="method#update#0;class#Window#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Input.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Input.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#keyTyped#0;class#Input#0" />
+                <element signature="method#keyPressed#0;class#Input#0" />
+                <element signature="method#mouseClicked#0;class#Input#0" />
+                <element signature="method#mouseEntered#0;class#Input#0" />
+                <element signature="method#mouseExited#0;class#Input#0" />
+                <element signature="method#mouseDragged#0;class#Input#0" />
+                <element signature="method#mouseMoved#0;class#Input#0" />
               </folding>
             </state>
           </provider>
@@ -54,9 +75,10 @@
       <file leaf-file-name="Engine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="109" column="33" lean-forward="true" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
+            <state relative-caret-position="381">
+              <caret line="116" column="39" lean-forward="true" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#stop#0;class#Engine#0" />
                 <element signature="method#dispose#0;class#Engine#0" />
               </folding>
@@ -74,6 +96,10 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -83,19 +109,21 @@
         <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/GameLauncher.java" />
         <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Graphics/World.java" />
         <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Display.java" />
-        <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Window.java" />
         <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Main.java" />
-        <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Engine.java" />
         <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Graphics/Renderer.java" />
+        <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Window.java" />
+        <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Engine.java" />
+        <option value="$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Input.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2476" />
-    <option name="y" value="-25" />
+    <option name="x" value="2518" />
+    <option name="y" value="-22" />
     <option name="width" value="975" />
     <option name="height" value="1030" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages Scope="false" />
@@ -169,9 +197,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Games/GitHub" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -276,6 +304,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -285,8 +314,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32880846" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32570806" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32570806" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -310,7 +339,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -331,6 +360,8 @@
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
             <element signature="method#createWindow#0;class#Window#0" />
             <element signature="method#update#0;class#Window#0" />
           </folding>
@@ -342,6 +373,7 @@
         <state relative-caret-position="578">
           <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#stop#0;class#Engine#0" />
             <element signature="method#dispose#0;class#Engine#0" />
           </folding>
@@ -375,6 +407,8 @@
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
             <element signature="method#createWindow#0;class#Window#0" />
             <element signature="method#update#0;class#Window#0" />
           </folding>
@@ -386,6 +420,7 @@
         <state relative-caret-position="578">
           <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#stop#0;class#Engine#0" />
             <element signature="method#dispose#0;class#Engine#0" />
           </folding>
@@ -419,6 +454,8 @@
           <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
             <element signature="method#createWindow#0;class#Window#0" />
             <element signature="method#update#0;class#Window#0" />
           </folding>
@@ -440,6 +477,7 @@
         <state relative-caret-position="1496">
           <caret line="114" column="18" lean-forward="true" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#stop#0;class#Engine#0" />
             <element signature="method#dispose#0;class#Engine#0" />
           </folding>
@@ -494,17 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="109" column="33" lean-forward="true" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
-          <folding>
-            <element signature="method#stop#0;class#Engine#0" />
-            <element signature="method#dispose#0;class#Engine#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/eu/kingconquest/kingmap/Graphics/Renderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -517,12 +544,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="248">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
             <element signature="method#createWindow#0;class#Window#0" />
             <element signature="method#update#0;class#Window#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="116" column="39" lean-forward="true" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#stop#0;class#Engine#0" />
+            <element signature="method#dispose#0;class#Engine#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eu/kingconquest/kingmap/Cores/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#keyTyped#0;class#Input#0" />
+            <element signature="method#keyPressed#0;class#Input#0" />
+            <element signature="method#mouseClicked#0;class#Input#0" />
+            <element signature="method#mouseEntered#0;class#Input#0" />
+            <element signature="method#mouseExited#0;class#Input#0" />
+            <element signature="method#mouseDragged#0;class#Input#0" />
+            <element signature="method#mouseMoved#0;class#Input#0" />
           </folding>
         </state>
       </provider>
